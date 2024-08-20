@@ -1,5 +1,7 @@
 document.getElementById('Uday-send').addEventListener('click', function() {
     sendMessage('Uday', 'Uday');
+});
+
 document.getElementById('Uday').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         event.preventDefault();
@@ -7,11 +9,19 @@ document.getElementById('Uday').addEventListener('keydown', function(event) {
     }
 });
 
+document.getElementById('Lakshmi-send').addEventListener('click', function() {
+    sendMessage('Lakshmi', 'Lakshmi');
+});
+
 document.getElementById('Lakshmi').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         event.preventDefault();
         sendMessage('Lakshmi', 'Lakshmi');
     }
+});
+
+document.getElementById('Kannaya-send').addEventListener('click', function() {
+    sendMessage('Kannaya', 'Kannaya');
 });
 
 document.getElementById('Kannaya').addEventListener('keydown', function(event) {
@@ -71,12 +81,4 @@ function sendMessage(inputId, user) {
         inputField.value = ''; 
         fileField.value = '';
     }
-}});
-
-document.getElementById('Lakshmi-send').addEventListener('click', function() {
-    sendMessage('Lakshmi', 'Lakshmi');
-});
-
-document.getElementById('Kannaya-send').addEventListener('click', function() {
-    sendMessage('Kannaya', 'Kannaya');
-});
+}
